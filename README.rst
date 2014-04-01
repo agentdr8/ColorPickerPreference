@@ -1,0 +1,50 @@
+=====================
+ColorPickerPreference
+=====================
+
+Generally used classes by Daniel Nilsson.
+ColorPickerPreference class by Sergey Margaritov.
+Packed by Sergey Margaritov.
+
+Features
+========
+
+* Color Area
+* Hue Slider
+* Alpha Slider (disabled by default)
+* Old & New Color
+* Color Preview in Preferences List
+* Enable/disable color picker (saves an additional value)
+
+Requirements
+============
+
+Tested with APIv7, but maybe will work with early versions
+
+Usage
+=====
+
+You can see some tests inside
+
+::
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="color1"
+        android:title="@string/color1_title"
+        android:summary="@string/color1_summary"
+        android:defaultValue="@integer/COLOR_BLACK"     <!-- HEX value also accepted (v1.1) -->
+        alphaSlider="true"                              <!-- enable alpha slider via XML -->
+        showCheckbox="true"                             <!-- give users the possibility to disable the color... -->
+        enabledByDefault="true"                         <!-- ...but define that it is enabled by default -->
+    />
+
+To enable Alpha Slider in your code use function:
+::
+    setAlphaSliderEnabled(boolean enable)
+
+Screens
+=======
+
+* .. image:: https://github.com/attenzione/android-ColorPickerPreference/raw/master/screen_1.png
+
+* .. image:: https://github.com/attenzione/android-ColorPickerPreference/raw/master/screen_2.png
